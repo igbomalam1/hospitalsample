@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <!-- Logo and Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/hlogo.jpg" alt="Hospital Logo" height="40" class="mr-2">
+                    Sample Hospital
+                </a>
+    
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="staffs.html">Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about" style="background-image: url('images/bgimg.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-content p-4">
+                        <div class="row">
+                            <!-- Image Column -->
+                            <div class="col-md-6 order-md-2">
+                                <img src="images/slide1fac.jpg" alt="About Image" class="img-fluid border rounded">
+                            </div>
+                            <!-- Text Column -->
+                            <div class="col-md-6 order-md-1 align-self-center">
+                                <h2>About Us</h2>
+                                <p>
+                                    Welcome to Sample Hospital, a state-of-the-art healthcare facility dedicated to providing exceptional patient care and service. Our team of highly skilled medical professionals, cutting-edge technology, and commitment to excellence make us a leader in the healthcare industry.
+                                </p>
+                                <h3>Our Mission</h3>
+                                <p>
+                                    Our mission is to provide compassionate, patient-centered care to every individual who walks through our doors. We strive to deliver the highest quality medical services, educate our communities on healthy living, and advance the field of medicine through research and innovation.
+                                </p>
+                                <h3>Our Values</h3>
+                                <ul>
+                                    <li>Patient-centered care</li>
+                                    <li>Compassion and empathy</li>
+                                    <li>Excellence in everything we do</li>
+                                    <li>Collaboration and teamwork</li>
+                                    <li>Innovation and progress</li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Staff Section -->
+    <section class="staff py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Key Staff</h2>
+            <div class="row">
+                <!-- Staff 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card staff-card">
+                        <img src="images/staff0.jpg" class="card-img-top img-fluid rounded" alt="Mr Sample Dr">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mr Sample Dr</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Head of Medical Division</h4>
+                            <p class="card-text">
+                                Mr Sample Dr oversees all medical operations at our hospital, ensuring that we provide the highest quality care to our patients. With over 20 years of experience, he is a leader in the field of medicine and a trusted mentor to our staff.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Staff 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card staff-card">
+                        <img src="images/staff1.jpg" class="card-img-top img-fluid rounded" alt="Mr Sample Cardiologist">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mr Sample Cardiologist</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Head of Cardiology</h4>
+                            <p class="card-text">
+                                Mr Sample Cardiologist leads our cardiology department with expertise and compassion. He specializes in treating heart conditions and is committed to advancing cardiovascular health through innovative treatments and patient education.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Staff 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card staff-card">
+                        <img src="images/staff2.jpg" class="card-img-top img-fluid rounded" alt="Mrs Sample Pharmacist">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mrs Sample Pharmacist</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Head of Pharmacy</h4>
+                            <p class="card-text">
+                                Mrs Sample Pharmacist manages our pharmacy with precision and care. She is dedicated to ensuring that our patients receive the correct medications and understands their treatments, contributing to their overall health and well-being.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@hospital.com</li>
+                        <li>Address: 123 Medical Lane, Health City, State</li>
+                        <li>Phone: (123) 456-7890</li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Staff</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                    </ul>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- FAQs and Privacy Policy -->
+                <div class="col-md-4">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.header, .footer {
+    background-color: #4682B4; /* Dark Blue */
+    color: #FFFFFF; /* White */
+}
+
+.btn {
+    background-color: #012542; /* Dark Blue */
+    color: #FFFFFF; /* White */
+}
+
+.btn:hover {
+    background-color: #243a4d; /* Dark Blue */
+    color: #FFFFFF; /* White */
+}
+
+.hero {
+    background-color: #ADD8E6; /* Light Blue */
+    color: #333;
+    padding: 100px 0;
+    text-align: center;
+}
+.services, .staff, .testimonials {
+    padding: 50px 0;
+}
+.contact {
+    background-color: #949ea7; /* Medium Blue */
+    color: #FFFFFF; /* White */
+    padding: 50px 0;
+}
+
+.hero {
+    position: relative;
+    padding: 0;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-item img {
+    max-height: 600px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #4682B4; /* Dark Blue */
+    color: #FFFFFF; /* White */
+}
+
+.footer h5 {
+    margin-bottom: 8px;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer .nav .nav-item {
+    margin: 0 4px;
+}
+
+
+.footer .text-center p {
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+.about {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+    border: 1px solid #746c6c; /* Rectangular border */
+    margin: 20px 0; /* Add some margin to move the content away from the screen edges */
+}
+
+.about-content h2 {
+    color: #333; /* Text color */
+}
+
+.about-content .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.about-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 100%; /* Ensure image doesn't exceed the content height */
+}
+
+@media (max-width: 767.98px) {
+    .about-content img {
+        margin-bottom: 20px; /* Add space below image on small screens */
+    }
+}
+
+.services {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.service-card {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+}
+
+.service-card .card-body {
+    padding: 30px;
+}
+
+.service-card i {
+    color: #4682B4; /* Icon color */
+}
+
+.service-card .card-title {
+    color: #333; /* Title color */
+}
+
+.service-card .card-text {
+    color: #666; /* Text color */
+}
+
+.staff {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+h2 {
+    color: #4682B4; /* Matching the theme color */
+}
+
+.staff-card {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.staff-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+}
+
+.staff-card .card-body {
+    padding: 20px;
+}
+
+.staff-card .card-title {
+    color: #333; /* Title color */
+    font-size: 1.5rem;
+}
+
+.staff-card .card-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.staff-card .card-text {
+    color: #666; /* Text color */
+}
+
+.staff-card img {
+    border-radius: 15px 15px 0 0; /* Rounded corners for the image */
+}
+
+hr {
+    margin: 0;
+}
+
+.testimonials {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+
+.testimonial-card {
+    border: none; /* No border for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+    border-radius: 15px; /* Rounded corners for the card */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+}
+
+.testimonial-card .card-img {
+    max-width: 100px; /* Limit the image size */
+    margin: 20px; /* Space around the image */
+}
+
+.testimonial-card .card-body {
+    padding: 30px;
+}
+
+.testimonial-card .card-title {
+    color: #333; /* Title color */
+}
+
+.testimonial-card .card-text {
+    color: #666; /* Text color */
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+/* Popup container - can be a fixed position */
+.popup-container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Popup content */
+  .popup-content {
+    background-color: aliceblue;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.social-icon {
+    color: #28a745;
+}  

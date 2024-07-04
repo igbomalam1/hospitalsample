@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <!-- Logo and Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/hlogo.jpg" alt="Hospital Logo" height="40" class="mr-2">
+                    Sample Hospital
+                </a>
+    
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="staffs.html">Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#heroCarousel" data-slide-to="1"></li>
+                <li data-target="#heroCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slide1fac.jpg" class="d-block w-100" alt="First Slide">
+                    <div class="carousel-caption">
+                        <h2>Welcome to Our Hospital</h2>
+                        <p>Providing exceptional healthcare for our community</p>
+                        <a href="#" class="btn btn-primary">Make an Appointment</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide2fas.jpg" class="d-block w-100" alt="Second Slide">
+                    <div class="carousel-caption">
+                        <h2>Expert Medical Team</h2>
+                        <p>Highly qualified doctors and nurses</p>
+                        <a href="#" class="btn btn-primary">Meet Our Staff</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/lab.jpg" class="d-block w-100" alt="Third Slide">
+                    <div class="carousel-caption">
+                        <h2>State-of-the-Art Facilities</h2>
+                        <p>Advanced technology for your health</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <div id="welcomePopup" class="popup-container">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Welcome Dear!</h2>
+            <p>This is just a sample website and doesnt speak all for our work, let's talk about what you want and we will make it a reality</strong>. Feel free to go through our <a href="devigbomalam.com/portfolios.html">portfolio</a> and <a href="devigbomalam.com/pricing.html">Price list</a> to see some of our works.<br> <i>Disclaimer: all things used here are just for sample purposese and not real location, pictures or properties etc</i></p>
+        </div>
+    </div>   
+    
+    <hr>
+
+    <!-- About Us Section -->
+    <section class="about" style="background-image: url('images/bgimg.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-content p-4">
+                        <div class="row">
+                            <!-- Image Column -->
+                            <div class="col-md-6 order-md-2">
+                                <img src="images/slide1fac.jpg" alt="About Image" class="img-fluid border rounded">
+                            </div>
+                            <!-- Text Column -->
+                            <div class="col-md-6 order-md-1 align-self-center">
+                                <h2>About Us</h2>
+                                <p>
+                                    Welcome to Sample Hospital, a state-of-the-art healthcare facility dedicated to providing exceptional patient care and service. Our team of highly skilled medical professionals, cutting-edge technology, and commitment to excellence make us a leader in the healthcare industry.
+                                </p>
+                                <h3>Our Mission</h3>
+                                <p>
+                                    Our mission is to provide compassionate, patient-centered care to every individual who walks through our doors. We strive to deliver the highest quality medical services, educate our communities on healthy living, and advance the field of medicine through research and innovation.
+                                </p>
+                                <h3>Our Values</h3>
+                                <ul>
+                                    <li>Patient-centered care</li>
+                                    <li>Compassion and empathy</li>
+                                    <li>Excellence in everything we do</li>
+                                    <li>Collaboration and teamwork</li>
+                                    <li>Innovation and progress</li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    
+    <!-- Services Section -->
+    <section class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-procedures fa-3x mb-3"></i>
+                            <h3 class="card-title">Inpatient Care</h3>
+                            <p class="card-text">Comprehensive inpatient care services for all your medical needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-heartbeat fa-3x mb-3"></i>
+                            <h3 class="card-title">Cardiology</h3>
+                            <p class="card-text">Advanced cardiac care for heart-related conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-stethoscope fa-3x mb-3"></i>
+                            <h3 class="card-title">General Checkup</h3>
+                            <p class="card-text">Routine checkups and preventive healthcare services.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-md fa-3x mb-3"></i>
+                            <h3 class="card-title">Pediatrics</h3>
+                            <p class="card-text">Specialized care for infants, children, and adolescents.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-syringe fa-3x mb-3"></i>
+                            <h3 class="card-title">Vaccinations</h3>
+                            <p class="card-text">Comprehensive vaccination services for all age groups.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-x-ray fa-3x mb-3"></i>
+                            <h3 class="card-title">Radiology</h3>
+                            <p class="card-text">Advanced imaging services for accurate diagnosis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Staff Section -->
+    <section class="staff py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Key Staff</h2>
+            <div class="row">
+                <!-- Staff 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card staff-card">
+                        <img src="images/staff0.jpg" class="card-img-top img-fluid rounded" alt="Mr Sample Dr">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mr Sample Dr</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Head of Medical Division</h4>
+                            <p class="card-text">
+                                Mr Sample Dr oversees all medical operations at our hospital, ensuring that we provide the highest quality care to our patients. With over 20 years of experience, he is a leader in the field of medicine and a trusted mentor to our staff.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Staff 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card staff-card">
+                        <img src="images/staff1.jpg" class="card-img-top img-fluid rounded" alt="Mr Sample Cardiologist">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mr Sample Cardiologist</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Head of Cardiology</h4>
+                            <p class="card-text">
+                                Mr Sample Cardiologist leads our cardiology department with expertise and compassion. He specializes in treating heart conditions and is committed to advancing cardiovascular health through innovative treatments and patient education.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Staff 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card staff-card">
+                        <img src="images/staff2.jpg" class="card-img-top img-fluid rounded" alt="Mrs Sample Pharmacist">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mrs Sample Pharmacist</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Head of Pharmacy</h4>
+                            <p class="card-text">
+                                Mrs Sample Pharmacist manages our pharmacy with precision and care. She is dedicated to ensuring that our patients receive the correct medications and understands their treatments, contributing to their overall health and well-being.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Patients Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="card testimonial-card">
+                            <div class="row no-gutters">
+                                <div class="col-md-2">
+                                    <img src="images/patient1.jpg" class="card-img rounded-circle" alt="Patient 1">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">"The care I received at Sample Hospital was exceptional. The staff was professional and compassionate."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="card testimonial-card">
+                            <div class="row no-gutters">
+                                <div class="col-md-2">
+                                    <img src="images/patient2.jpg" class="card-img rounded-circle" alt="Patient 2">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jane Smith</h5>
+                                        <p class="card-text">"I felt very comfortable and well taken care of. The facilities are top-notch."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="card testimonial-card">
+                            <div class="row no-gutters">
+                                <div class="col-md-2">
+                                    <img src="images/patient3.jpg" class="card-img rounded-circle" alt="Patient 3">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Emily Johnson</h5>
+                                        <p class="card-text">"The doctors and nurses were attentive and knowledgeable. I highly recommend this hospital."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="carousel-item">
+                        <div class="card testimonial-card">
+                            <div class="row no-gutters">
+                                <div class="col-md-2">
+                                    <img src="images/patient4.jpg" class="card-img rounded-circle" alt="Patient 4">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Michael Brown</h5>
+                                        <p class="card-text">"Sample Hospital provided excellent care during my stay. The staff was friendly and supportive."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>    
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@hospital.com</li>
+                        <li>Address: 123 Medical Lane, Health City, State</li>
+                        <li>Phone: (123) 456-7890</li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Staff</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                    </ul>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- FAQs and Privacy Policy -->
+                <div class="col-md-4">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Sample Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+               var popup = document.getElementById("welcomePopup");
+               popup.style.display = "block";
+           
+               // Close the popup when the close button is clicked
+               window.closePopup = function() {
+                   popup.style.display = "none";
+               }
+           });
+       </script>
+</body>
+</html>

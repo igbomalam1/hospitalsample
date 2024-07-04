@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <!-- Logo and Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/hlogo.jpg" alt="Hospital Logo" height="40" class="mr-2">
+                    Sample Hospital
+                </a>
+    
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="staffs.html">Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Contact Section -->
+
+    <section class="about" style="background-image: url('images/bgimg.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-content p-4">
+                        <div class="row">
+                            <!-- Image Column -->
+                            <div class="col-md-6">
+                                <div class="content-box p-4 rounded">
+                                    <h2>Contact Information</h2>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-map-marker-alt"></i> Address: 123 Sample Street, Sample City, SC 12345</li>
+                                        <li><i class="fas fa-phone"></i> Phone: <a href="tel:+123456789">+1 (234) 567-89</a></li>
+                                        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:info@samplehospital.com">info@samplehospital.com</a></li>
+                                    </ul>
+                                    <!-- Google Maps Embed -->
+                                    <div class="mt-4">
+                                        <h4>Our Location</h4>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.507941631185!2d-122.41941518468213!3d37.7749292797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5ec5a857%3A0x7e56b8d2be4c7b6c!2sSample%20Academy!5e0!3m2!1sen!2sus!4v1595919299241!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Text Column -->
+                            <div class="col-md-6 order-md-1 align-self-center container">
+                                <h2>Contact Us</h2>
+                                <p>If you have any questions or need further information, please feel free to reach out to us using the contact details below or fill out the contact form.</p>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" class="form-control"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                                </form>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@hospital.com</li>
+                        <li>Address: 123 Medical Lane, Health City, State</li>
+                        <li>Phone: (123) 456-7890</li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Staff</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                    </ul>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- FAQs and Privacy Policy -->
+                <div class="col-md-4">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
